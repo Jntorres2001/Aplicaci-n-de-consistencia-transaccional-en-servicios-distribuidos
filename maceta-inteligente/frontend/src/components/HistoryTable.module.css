@@ -1,0 +1,53 @@
+/* HistoryTable.module.css */
+.wrapper {
+  overflow-x: auto;
+  max-height: 280px;
+  overflow-y: auto;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+}
+.table thead {
+  position: sticky;
+  top: 0;
+  background: var(--bg-card);
+  z-index: 1;
+}
+.table th {
+  text-align: left;
+  padding: 0.5rem 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.68rem;
+}
+.table td {
+  padding: 0.5rem 0.8rem;
+  border-bottom: 1px solid rgba(30,45,69,0.6);
+  color: var(--text);
+}
+.table tr:last-child td { border-bottom: none; }
+.table tbody tr:hover { background: rgba(255,255,255,0.02); }
+
+.alertRow td { background: rgba(239,68,68,0.04); }
+.idx    { color: var(--text-muted); width: 36px; }
+.mono   { font-family: var(--mono); }
+.device { color: var(--text-muted); font-size: 0.7rem; }
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  border: 1px solid;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.empty {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  text-align: center;
+  padding: 2rem 0;
+}

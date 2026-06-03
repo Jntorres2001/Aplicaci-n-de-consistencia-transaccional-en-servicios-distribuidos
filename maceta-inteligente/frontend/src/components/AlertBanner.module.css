@@ -1,0 +1,22 @@
+/* AlertBanner.module.css */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 0.75rem 1.2rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  animation: slideIn 0.25s ease;
+}
+.msg { flex: 1; }
+.close {
+  background: transparent;
+  font-size: 0.9rem;
+  padding: 0 0.3rem;
+  opacity: 0.7;
+}
+.close:hover { opacity: 1; transform: none; }
+@keyframes slideIn { from { opacity:0; transform:translateY(-8px); } to { opacity:1; transform:none; } }
